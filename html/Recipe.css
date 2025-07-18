@@ -1,0 +1,28 @@
+body{background-color: rgb(245, 241, 240);
+color:rgb(18, 17, 17) ;
+font-family: Georgia, 'Times New Roman', Times, serif; }
+header{background-color: rgb(225, 175, 175);
+    color: rgb(148, 4, 4);
+    padding:40px;
+text-align: center;}
+main{
+    width: 80%;
+    margin: 50px;
+    padding: 0px;
+}
+.introduction, .ingredients, .Instructions{background-color: rgb(245, 190, 224);
+    padding: 20px;
+    color: crimson;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.ingredients h2,.Instructions h2{
+    color: rgb(126, 35, 35);
+}
+footer{
+    text-align: center;
+    background-color: darkred;
+    color: black;
+    padding: 10px;
+}
