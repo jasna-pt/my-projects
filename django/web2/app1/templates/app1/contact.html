@@ -1,0 +1,20 @@
+{% extends "app1/base.html" %}
+{% load static %}
+
+
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<h1>Contact Page</h1>
+<img src="{% static 'app1\images\contact.jpeg'%}"alt='contact image'>
+<p>feel free to reach out to us via email or phone</p>
+
+<form action="" method='post'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+
+</form>
+
+{% endblock %}

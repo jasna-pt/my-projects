@@ -1,0 +1,17 @@
+<div>
+    <h5>{{ todo_list.title | upper }}</h5>
+</div>
+
+<ul>
+    {% for todoitem in object_list %}
+    <li>
+       
+            {{ todoitem.title }}
+        
+    </li>
+    {% empty %}
+    <p>There are no to-do items in this list.</p>
+    {% endfor %}
+    
+</ul>
+

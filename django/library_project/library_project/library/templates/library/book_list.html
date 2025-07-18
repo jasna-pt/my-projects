@@ -1,0 +1,11 @@
+{% extends 'library/base.html' %}
+{% block content %}
+<h2>Books</h2>
+<a class="btn btn-primary mb-2" href="{% url 'add_book' %}">Add Book</a>
+<a class="btn btn-info mb-2" href="{% url 'issue_book' %}">Issue Book</a>
+<ul class="list-group">
+  {% for book in books %}
+    <li class="list-group-item">{{ book.title }} by {{ book.author }} (Available:{{book.available_quantity}}/total:{{ book.total_quantity }})</li>
+  {% endfor %}
+</ul>
+{% endblock %}

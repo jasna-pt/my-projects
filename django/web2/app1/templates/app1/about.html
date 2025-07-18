@@ -1,0 +1,21 @@
+{% extends "app1/base.html" %}
+{% load static %}
+
+
+
+{% block title %}About{% endblock %}
+
+
+{% block content %}
+<h1>About us</h1>
+<img src="{% static 'app1/images/about.jpeg'%}"alt="about image">
+<p>learn more about our company</p>
+<form action="" method='post'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+
+</form>
+
+
+{% endblock %}
