@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopX - Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+ 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand fw-bold" href="index.html">ShopX</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link active" href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Cart Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 fw-bold">Your Shopping Cart</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>Product</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="\images\denim jacket.jpeg" alt="Product"></td>
+              <td>Denim Jacket</td>
+              <td>₹1299</td>
+              <td>
+                <input type="number" class="form-control" value="1" min="1" style="width: 80px; margin: auto;">
+              </td>
+              <td>₹1299</td>
+              <td><button class="btn btn-danger btn-sm rounded-pill">×</button></td>
+            </tr>
+            <!-- More items can go here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="text-end mt-4">
+        <h5>Total: ₹1299</h5>
+        <a href="checkout.html" class="btn btn-success px-4 rounded-pill">Proceed to Checkout</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 ShopX. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #cd9fd2;
+  color: #141212;
+}
+
+.btn {
+  font-weight: 500;
+}
+
+footer {
+  font-size: 14px;
+  background-color: #212529;
+  color: #fff;
+}
+
+/* Hero Section (Homepage) */
+.hero {
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-position: center;
+  color: #1d1c1c;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Product Page */
+.product-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Table */
+table img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Forms (checkout/login) */
+.form-control,
+.form-select {
+  border-radius: 8px;
+}
+
+/* Login Card */
+.card-login {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
